@@ -10861,7 +10861,7 @@
                     return e;
                   })(t, Fe.lFrame.contextLView))[8];
                 })(t);
-              })().userSelect.emit(n);
+              })().userselect.emit(n);
             }),
             Qs(3, "Set"),
             $s(),
@@ -10875,7 +10875,7 @@
       let Zl = (() => {
           class t {
             constructor() {
-              this.userSelect = new $o();
+              this.userselect = new $o();
             }
             ngOnInit() {
               if ("string" == typeof this.userslist)
@@ -10892,7 +10892,7 @@
               type: t,
               selectors: [["app-users-list"]],
               inputs: { userslist: "userslist" },
-              outputs: { userSelect: "userSelect" },
+              outputs: { userselect: "userselect" },
               decls: 3,
               vars: 1,
               consts: [[4, "ngFor", "ngForOf"], [3, "click"]],

@@ -1,5 +1,5 @@
 <template>
-	<users-list :userslist="users" userSelect="userSelect"></users-list>;
+	<users-list :userslist="users" @userselect="userselect"></users-list>;
 </template>
 
 <script>
@@ -8,6 +8,11 @@
     data() {
       return {
         users: JSON.stringify([{ name: "John Wick" }, { name: "IronMan" }])
+      }
+    },
+    methods: {
+      userselect(event) {
+        alert(event)
       }
     }
   }
