@@ -12,7 +12,7 @@
     },
     methods: {
       userselect(event) {
-        alert(event)
+        alert(JSON.stringify(event.detail))
       }
     }
   }
